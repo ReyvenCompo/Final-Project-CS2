@@ -1,22 +1,3 @@
-# Project_Template_ComputerScience2
+Summary:
 
-# 📊 Data Insights Dashboard Project
-
-This repository serves as a STARTER TEMPLATE for the Yearlong Programming Project.
-
-## 📂 Repository Structure
-- `/data` → Contains sample JSON datasets you can choose from.
-- `/docs` → Place your project proposal and related documentation here.
-- `README.md` → Basic introduction to your project.
-
-## Instructions:
-1. Choose a dataset from the `/data` folder (e.g., students.json, sales.json, movies.json, etc.).
-2. Write your Project Proposal using the provided template (`/docs/proposal_template.md`).
-3. Update this `README.md` to describe your project idea.
-4. Commit and push your changes to GitHub.
-
-##  Getting Started
-- Fork or clone this repository.
-- Open the datasets in the `/data` folder to explore the contents.
-- Follow the proposal template to draft your plan.
-
+The overall main objective of our project is to help online shoppers, sellers and support faster and more efficient online or digital trade. It creates a better environment for sellers and buyers allowing them to increase in sales, mass selling, mass buying, easier navigation of products, and so much more, catering to the user’s need or condition. Our project allows the use of all of these by converting JSON files, otherwise known as raw files and converting it into either a summary, find patterns, or divide the data according to their use. It analyzes the data and the output can be similar to: “Top 3 Best Selling Products” or “Products With Best Reviews”. This can be beneficial to both sellers and buyers since it allows the buyers to find products easier, as well as create more opportunities for sellers to find out about what is trending in the market. 
