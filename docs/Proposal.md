@@ -120,3 +120,37 @@ The program outputs organized and readable summaries that allow users to quickly
 Conclusion
 The E-Shop Analyzer is a practical application of Python programming for real-world data analysis. By transforming raw JSON e-commerce data into meaningful insights, the project improves efficiency and demonstrates essential programming skills suitable for a Computer Science 2 final project.
 
+Pseudo Code:
+
+    START
+    
+    LOAD e-commerce data from JSON file
+    
+    REPEAT
+        DISPLAY main menu
+        INPUT user choice
+    
+        IF choice = 1 THEN
+            DISPLAY sales summary
+        ELSE IF choice = 2 THEN
+            DISPLAY top-selling products
+        ELSE IF choice = 3 THEN
+            ASK for category
+            DISPLAY category summary
+        ELSE IF choice = 4 THEN
+            DISPLAY pending orders
+        ELSE IF choice = 5 THEN
+            ASK for customer name
+            DISPLAY customer orders
+        ELSE IF choice = 6 THEN
+            DISPLAY exit message
+            END program
+        ELSE
+            DISPLAY invalid choice message
+        END IF
+    
+    UNTIL user exits
+    
+    END
+
+
