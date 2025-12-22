@@ -1,3 +1,5 @@
-Summary:
+Project Summary
 
-The overall main objective of our project is to help online shoppers, sellers and support faster and more efficient online or digital trade. It creates a better environment for sellers and buyers allowing them to increase in sales, mass selling, mass buying, easier navigation of products, and so much more, catering to the user’s need or condition. Our project allows the use of all of these by converting JSON files, otherwise known as raw files and converting it into either a summary, find patterns, or divide the data according to their use. It analyzes the data and the output can be similar to: “Top 3 Best Selling Products” or “Products With Best Reviews”. This can be beneficial to both sellers and buyers since it allows the buyers to find products easier, as well as create more opportunities for sellers to find out about what is trending in the market. 
+The E-Shop Analyzer is a Python-based, menu-driven application designed to analyze e-commerce order data stored in a JSON file. The program automatically processes raw transaction data and generates useful summaries such as total sales, top-selling products, category-based reports, pending orders, and customer-specific purchase details.
+
+By using Python file handling and data processing techniques, the project transforms complex JSON data into readable and organized information. This system improves efficiency by reducing the need for manual data analysis and demonstrates the practical application of Python programming concepts in real-world e-commerce scenarios.
