@@ -1,109 +1,122 @@
-Project Title:
-E-Shop Analyzer
+E-Shop Analyzer: A Menu-Driven Python Program for E-commerce Data Analysis
+
+Project Proposal
+
+Project Description
+The E-Shop Analyzer is a Python-based, menu-driven application designed to analyze e-commerce order data stored in a JSON file. The program reads structured transaction data and converts it into meaningful summaries such as total sales, best-selling products, category-based reports, pending orders, and customer-specific order details.
+This project demonstrates the practical use of Python programming concepts such as file handling, loops, dictionaries, functions, and conditional statements to analyze real-world e-commerce data.
+
+Problem Statement
+E-commerce platforms generate large volumes of transaction data that are commonly stored in raw formats such as JSON. Manually reviewing these files to track sales, customer purchases, and order statuses is inefficient and time-consuming.
+This project aims to address this problem by providing an automated Python program that processes e-commerce data and presents clear and organized summaries to users.
+
+Project Objectives
+The objectives of this project are to:
+
+    Load and process e-commerce order data from a JSON file.
+
+    Display a sales summary including total sales and average order value.
+
+    Identify the top three best-selling products.
+
+    Summarize sales and quantity by product category.
+
+    Display orders that are not yet delivered.
+
+    Allow users to search orders by customer name.
+
+    Apply Python programming concepts in a real-world data analysis scenario.
 
 
+Scope and Limitations
 
-Problem Statement:
-Online shopping is the “new norm” or new normal, and keeping track of the amount of sales, revenue, top-selling products, customer spending patterns, order statuses and so many more is getting harder and more complex as the technology advances. This can show greater effect when data is provided using things like JSON files, which are raw data and especially hard to manually analyze the raw data efficiently.
+Scope
 
-As our problems add up, so do the solutions for our issues. Our projects’ goal is to effectively help in analyzing things related to e-commerce so people who sell online can have an easier time checking the data of their online shop. Our project's goal is to make a python program which can effectively analyze, process, and summarize given information or data from a given raw JSON file. The JSON file contains details such as customers, order dates, payment methods, product categories, and total amounts.
+    The program analyzes data from a local JSON file.
 
-This project can effectively increase efficiency and improve the quality of life of online shoppers and sellers alike since it helps in analyzing data and information for faster processing. In the long run, this saves time and manpower in analyzing data, while using things like raw files such as JSON which are hard to analyze manually so much easier.
+    Output is displayed through a text-based, menu-driven interface.
 
+    The system provides basic sales and customer analysis.
 
+Limitations
+    
+    The system does not include a graphical user interface (GUI).
 
-Project Objectives:
-To analyze and summarize e-commerce order data from a JSON file using Python to reveal patterns and key insights.
+    Data visualization such as charts or graphs is not included.
 
-To develop an interactive, menu-driven program that allows users to explore summaries such as total revenue, top products, and customer details.
+    The program assumes that the JSON file is properly formatted.
 
-To apply and strengthen Python programming skills in file handling, data processing, and logical problem-solving through real-world data analysis.
+    Customer searches require an exact name match.
 
+System Features
 
+    Sales Summary
+     Displays the total number of orders, total sales amount, and average order value.
 
-Planned  Features:
-Sales Summary – Displays the total number of orders, overall revenue, and the average order value from the dataset.
+    Top-Selling Products
+     Displays the top three products based on quantity sold.
 
-Top-Selling Products – Identifies and lists the top 3 products based on the total quantity sold.
+    Category Summary
+     Allows the user to input a product category and view total sales and quantity sold.
 
-Category Sales Report – Summarizes total sales and number of items sold for each product category (e.g., Electronics, Accessories).
+    Pending Orders Viewer
+     Displays all orders that are not marked as Delivered.
 
-Order Status Tracker – Lists all orders that are still Pending or Shipped to help monitor delivery progress.
+    Customer Order Search
+     Allows users to search for customer orders and view detailed purchase information.
 
-Profit Margin – Analyzes price to production cost ratio and total items sold to calculate the most profitable items.
-
-Customer Search Tool – Allows users to search for a customer’s name to view their orders, total spending, and payment method.
-
-
-
-Planned Input and Output:
-Inputs
-User menu choice – to select which feature or analysis to run.
-Customer name – for searching specific customer orders and spending.
-
-Outputs
-Overall sales summary – total number of orders, total revenue, and average order value.
-Top-selling products – list of the top 3 most purchased items.
-Category sales report – total quantity sold and revenue per category.
-Order status list – orders that are Pending or Shipped, including customer names and total amounts.
-Customer order details – products purchased, total spending, and payment method for a specific customer.
+    Exit Program
+     Safely exits the program.
 
 
-Logic Plan:
-Start Program
+Input and Output
 
-Load JSON file "ecommerce_orders.json"
+Input
 
-Display Main Menu:
-1. Show overall sales summary
-2. Show top 3 best-selling products
-3. Show sales by product category
-4. Show pending or shipped orders
-5. Search customer order details
-6. Show payment method summary
-7. Exit program
+    JSON file containing e-commerce order data
 
-Repeat until user chooses Exit:
-    Ask for user choice
+    User menu selections
 
-    If choice == 1:
-        - Count total number of orders
-        - Sum all total_amount values
-        - Compute average order value
-        - Display results
+    Customer name or category input
 
-    Else if choice == 2:
-        - Loop through all items
-        - Add up quantities per product
-        - Sort by total quantity sold
-        - Display top 3 best-selling products
+Output
 
-    Else if choice == 3:
-        - Group items by category
-        - Calculate total sales and quantity for each category
-        - Display category summary
+    Sales summary reports
 
-    Else if choice == 4:
-        - Filter orders where status is "Pending" or "Shipped"
-        - Display order_id, customer name, and total_amount
+    List of best-selling products
 
-    Else if choice == 5:
-        - Ask user to input customer name
-        - Search for matching orders
-        - Display total spent, products bought, and payment method
+    Category-based sales summaries
 
-    Else if choice == 6:
-        - Count how many orders used each payment method
-        - Display payment summary
+    Detailed order information
 
-    Else if choice == 7:
-        - Display "Exiting program..."
-        - End loop
+    List of pending orders
 
-    Else:
-        - Display "Invalid option, please try again."
+Program Logic Overview
 
-End Program
+    Load the JSON file using Python’s json module.
 
+    Display a main menu with available analysis options.
 
+    Accept user input and execute the corresponding function.
+
+    Process data using loops, dictionaries, and conditional statements.
+
+    Display formatted results.
+
+    Repeat the process until the user exits the program.
+
+Tools and Technologies Used
+
+    Programming Language: Python
+
+    Data Format: JSON
+    
+    Library Used: json
+
+Development Environment: Visual Studio Code / Python IDLE
+
+Expected Output
+The program outputs organized and readable summaries that allow users to quickly understand sales performance, customer purchases, and order statuses without manually inspecting raw JSON data.
+Conclusion
+The E-Shop Analyzer is a practical application of Python programming for real-world data analysis. By transforming raw JSON e-commerce data into meaningful insights, the project improves efficiency and demonstrates essential programming skills suitable for a Computer Science 2 final project.
 
